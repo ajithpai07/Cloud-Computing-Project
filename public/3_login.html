@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/icon type" href="logo_tbar.png">
+        <link rel="stylesheet" href="css/css3.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script>
+            $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+            });
+        </script>
+        
+    </head>
+    <body>
+        <!-- Loader icon -->
+        <div class="se-pre-con"></div>
+        <!-- Loader icon -->
+        <div class="header">
+            <div class="header-logo">Google Analytics Tool Project</div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="3_login.html" class="button button1">Login</a></li>
+                    <li><a href="7_regform.html" class="button button2">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <p id="fld12" style="color: red;"></p>
+            <form id="login">
+                <input class="un" autocomplete="off" type="text" align="center" id="email" placeholder="Username" required pattern="[a-zA-Z0-9|.]+@[a-zA-z]+[.][a-zA-Z]+" title="Sorry, only letters, numbers, periods(.) are allowed." autofocus>
+                <input type="password" class="pass" align="center" id="password" placeholder="Password" name="psw" required pattern="(?=.*\d).{8,16}" onkeydown="if(event.ctrlKey && event.keyCode==86){return false;}" title="Sorry, password must be of 8 to 16 characters including atleast one in each category: uppercase, lowercase, number and special character.">
+                <input type="checkbox" onclick="myFunction()"> Show Password<br><br>
+                <input type="submit" value="LOGIN" class="submit">
+            </form>            
+            <a class="login-links-left" href="#">Forgot Password</a>
+            <a class="login-links-right" href="7_regform.html">New User? Sign Up</a>
+            <a class="glow-on-hover" type="button" href="index1.html">Other Login Options</a>
+        </div>
+       
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+
+    <script src="js/login.js"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+    </body>
+</html>

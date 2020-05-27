@@ -1,0 +1,328 @@
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: lightsalmon;
+    border: 2px solid orangered;
+    border-radius: 20px;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: orangered;
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 10px;
+      background: white;
+      border: 2px solid gray;
+      border-radius: 10px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: darkcyan;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {
+    font-style: italic;
+    color: darkblue;
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  /* Add a blue color to the author */
+  .author {
+    color: darkcyan;
+    font-weight: 500;
+  }
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: lightgreen;
+    color: black;
+  }
+  
+  .fa {font-size:50px;}
+
+
+
+
+
+
+
+body {
+        user-select: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #000000;
+        color: white;
+    }
+
+/* Loader icon */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+    z-index: 9999;
+    transition: 100s;
+	background: url(load1.gif) center no-repeat black;
+}
+/* Loader icon */
+
+    .button {
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 1px 2px;
+        cursor: pointer;
+    }
+
+    .button3 {             
+        text-decoration: none ;   
+        padding: 2px 24px;
+        border-radius: 5px;
+        background-color: red; 
+        color: black; 
+        border: 2px solid white;
+    }
+      
+    .button3:hover {
+        background-color: black;
+        color: black;    
+        border: 2px solid red;        
+        transition-duration: 0.5s;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .header {
+        background-color: black;
+        color: green;
+        height: 90px;        
+        border: 2px solid white; 
+    }
+    
+    .header-logo {
+        font-weight: bolder;
+        float: left;
+        font-size: 36px;
+        padding: 20px 40px;
+    }
+    
+    .header-menu li {
+        font-weight: bold;
+        float: right;
+        padding-top: 13px;
+        padding-bottom: 33px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .header-menu a{
+        text-decoration: none ;
+        color: white;
+    }
+    
+    .activ a{
+        text-decoration: none ;
+        color: orange;
+    }
+    
+    .header-menu a:hover{
+        text-decoration: none ;
+        color: orange;
+    }
+    
+    .activ a:hover{
+        text-decoration: none ;
+        color: red;
+    }
+    
+    .main {
+        padding-top: 20px;
+        padding-bottom: 100px; 
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+    
+    .right-img img{
+        border-radius: 500px;
+        float: right;
+        height: 250px;
+        width: 250px;
+        padding: 20px;
+    }
+
+    .left-img img{
+        border-radius: 500px;
+        float: left;
+        height: 250px;
+        width: 250px;
+        padding: 20px;
+    }
+    
+    .contents-item p{        
+        text-align: justify;
+    }
+
+    .intro-txt h2 {
+        font-size: 30px;
+    }
+
+    .intro-txt span {
+        color: orangered;
+    }
+    
+    .contents {
+        height: 500px;
+        margin-top: 100px;
+    }
+    
+    .contents-item {
+        float: left;
+        
+    }
+    
+    .contents-item p {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+        
+  .footer {
+      border: 2px solid white; 
+      background-color: black;
+      color: green;
+      height: 120px;
+  }
+  
+  .footer-cright {
+      font-weight: bold;        
+      text-align: left;        
+      padding-left: 30px;
+  }
+  
+  .footer-left{
+      margin-left:-130px;
+  }
+  .footer-left pre{
+      color: green;
+      padding: 5px;
+      font-size: 18px;
+  }
+  
+  .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+      font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+  }
+  
+  .footer-links a:before {
+      content: "|";
+      font-weight:300;
+      font-size: 20px;
+      left: 0;
+      color: #fff;
+      display: inline-block;
+      padding-right: 5px;
+    }
+    
+  .footer-links .link-1:before {
+      content: none;
+    }
+    

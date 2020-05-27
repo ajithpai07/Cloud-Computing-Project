@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/icon type" href="logo_tbar.png">
+        <link rel="stylesheet" href="css/css7.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script>
+            $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+            });
+        </script> 
+
+    </head>
+    <body>
+        <!-- Loader icon -->
+        <div class="se-pre-con"></div>
+        <!-- Loader icon -->
+        <div class="header">
+            <div class="header-logo">Google Analytics Tool Project</div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="3_login.html" class="button button1">Login</a></li>
+                    <li><a href="7_regform.html" class="button button2">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <form id="Register">
+                <fieldset>
+                  <legend><span class="number">1</span>Basic details</legend>
+                  <label>Name</label>
+                  <input type="text" class="slct" id="name" required pattern="[a-zA-Z|' ']{3,30}" title="Sorry, only letters and spaces are allowed with a maximum length of 3-30 letters." autofocus>
+                  <label>Date Of Birth</label>
+                  <input type="date" class="slct" id="Dob" required>
+                  <label>E-mail</label>
+                  <input type="email" class="slct" id="email" autocomplete="off" required pattern="[a-zA-Z0-9|.]+@[a-zA-z]+[.][a-zA-Z]+" title="Sorry, only letters, numbers, periods(.) are allowed.">  
+                  <label>New Password</label>
+                  <input type="password" class="slct" id="password" autocomplete="off" required pattern="(?=.*\d).{8,16}" title="Sorry, password must be of 8 to 16 characters including atleast one in each category: uppercase, lowercase, number and special character.">
+                </fieldset>          
+                                        
+                
+                <input type="submit" value="Sign Up" class="submit">
+            </form>
+            
+        </div>
+        
+
+
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-storage.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+
+<script src="js/register.js"></script>
+    </body>
+</html>

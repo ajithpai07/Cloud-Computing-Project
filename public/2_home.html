@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/icon type" href="logo_tbar.png">
+        <link rel="stylesheet" href="css/css2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script>
+            $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+            });
+        </script>
+        <!-- logout script -->
+        <script>
+          function logoutfunction() {
+            var r = confirm("Are you sure want to logout?");
+            if (r == true) {
+              window.location.href = "8_clogout.html";
+            }
+          }
+        </script>
+        <!-- logout script -->
+
+    </head>
+    <body>
+        <!-- Loader icon -->
+        <div class="se-pre-con"></div>
+        <!-- Loader icon -->
+        <div class="header">
+            <div class="header-logo">Google analytics tool</div>
+            <div class="header-menu">
+                <ul>
+                    <li><a onclick="logoutfunction()" class="button3">Logout</a></li>
+                    <li class="activ"><a href="2_home.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="intro-txt">
+                <h2>Welcome to <span>Google analytics tool projext</span> online portal.</h2>
+                <h6>Hello World</h6>
+            </div>                   
+        </div>
+       
+
+       
+
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+    
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+    
+        <script src="js/home.js"></script>
+    </body>
+</html>
